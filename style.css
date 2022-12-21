@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body { 
+    width: 80%;
+    height: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: lightblue;
+}
+.header-logo{
+    font-size: 2rem;
+}
+.nav{
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.ul{
+    display:flex;
+text-decoration: none;
+gap:1rem;
+margin-right: 2rem;
+}
+.li{
+list-style-type: none;
+font-size: .9rem;
+}
+
+.burguer{
+margin-left: 2rem;
+padding: .5rem;
+background-color:rgb(142, 202, 222);
+border:none;
+border-radius: 2px;
+display:none;
+}
+.hero{
+padding: 3rem;
+background-color: rgb(216, 216, 82);
+height: 100vh;
+}
+
+.hero p,
+.hero h2 {
+    padding: .5rem;
+}
+
+.lateral {
+    width: 200px;
+    height: 90vh;
+    position:absolute;
+    right: 0;
+    top: 100px;
+    background-color: rgb(133, 208, 233);
+    color: white !important;
+    animation: fadedIn 2s ease-in-out;
+}
+
+@keyframes fadedIn {
+    from {
+       transform: translateX(100%);
+    }
+    to {
+       transform: translateX(0%);
+    }
+ }
+    
+
+
+@media (max-width: 600px) {
+    .ul {
+        display:none
+    }
+    .burguer{
+        display:flex;
+    }
+    .hero{
+        padding: .5rem;
+        }
+}
